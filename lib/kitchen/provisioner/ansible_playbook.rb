@@ -280,7 +280,7 @@ module Kitchen
           prepare_host_vars
           prepare_hosts
           prepare_filter_plugins
-          prepare_ansible_vault_password_file
+          prepare_ansible_vault_password_file unless ansible_vault_password_file.nil?
           info('Finished Preparing files for transfer')
 
         end
